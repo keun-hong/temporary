@@ -4,7 +4,12 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <script>window.location.replace("https://expression-guests-ser-inexpensive.trycloudflare.com");</script>
+  <script>
+    fetch("https://api.github.com/repos/keun-hong/temporary/contents/url.txt")
+      .then(r => r.json())
+      .then(d => window.location.replace(atob(d.content).trim()))
+      .catch(() => document.body.innerText = "Redirect failed. Try again.");
+  </script>
 </head>
 <body>
   <p>Redirecting...</p>
