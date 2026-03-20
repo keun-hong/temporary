@@ -1,1 +1,1 @@
-https://maine-start-mattress-coordinator.trycloudflare.com
+Binary file /tmp/cloudflared.log matches
